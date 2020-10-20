@@ -24,6 +24,10 @@
 .normargin {
 	margin-right:0px !important;
 }
+.isurgent {
+	border-left: 20px solid #cf3431 !important;
+
+}
 .maxheight {
 	max-height:1030px;
 	height:1030px;

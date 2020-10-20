@@ -76,7 +76,7 @@ $cal = $this->get('calendar');
 
 					?>
 					<li class="ui-state-default" id="ticket_<?php echo $row['id']; ?>" >
-						<div class="ticketBox fixed" data-val="<?php echo $row['id']; ?>">
+						<div class="ticketBox fixed <?php if(strtotime($date)<time()){echo 'isurgent';} ?>" data-val="<?php echo $row['id']; ?>" >
 							<div class="row">
 								<div class="col-md-12 timerContainer" style="padding:5px 15px;" id="timerContainer-<?php echo $row['id'];?>">
 									<?php echo $row['projectName'];?>: <strong><a href="<?=BASE_URL ?>/tickets/showTicket/<?php echo $row['id'];?>" ><?php $this->e($row['headline']); ?></a></strong>

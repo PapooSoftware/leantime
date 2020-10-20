@@ -255,7 +255,23 @@ namespace leantime\domain\repositories {
         public function editUser(array $values, $id)
         {
 
-            $query = "UPDATE `zp_user` SET
+        	if (empty($values['password']))
+			{
+				$query = "UPDATE `zp_user` SET
+				firstname = :firstname,
+				lastname = :lastname,
+				username = :username,
+				phone = :phone,
+				status = :status,
+				role = :role,
+				hours = :hours,
+				wage = :wage,
+				clientId = :clientId
+				
+			 WHERE id = :id LIMIT 1";
+			}
+        	else{
+				$query = "UPDATE `zp_user` SET
 				firstname = :firstname,
 				lastname = :lastname,
 				username = :username,
@@ -268,6 +284,8 @@ namespace leantime\domain\repositories {
 				password = :password
 				
 			 WHERE id = :id LIMIT 1";
+			}
+
 
             $stmn = $this->db->database->prepare($query);
             $stmn->bindValue(':firstname', $values['firstname'], PDO::PARAM_STR);
