@@ -43,6 +43,12 @@
 .rightpanel {
 	margin-left: 0px !important;
 }
+.ticketDropdown ul::after {
+	left: 139px;
+}
+.dropdown-menu {
+	left: -120px;
+}
 @media (min-width: 1200px){
 	.col-lg-5 {
 		-webkit-box-flex: 0;

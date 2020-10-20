@@ -44,13 +44,14 @@
         <div class="row">
 			<div class="col-lg-5 maxheight">
 				<div class="col-lg-12">
-					<?php $this->displaySubmodule('mydashboard-burning_tickets') ?>
+					<?php $this->displaySubmodule('mydashboard-next_tickets') ?>
+
 				</div>
 			</div>
 			<div class="col-lg-7">
 				<div class="row">
 				<div class="col-lg-6">
-					<?php $this->displaySubmodule('mydashboard-next_tickets') ?>
+					<?php $this->displaySubmodule('mydashboard-burning_tickets') ?>
 
 				</div>
 
