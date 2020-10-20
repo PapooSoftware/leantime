@@ -19,7 +19,8 @@
 <!-- app -->
 <script src="<?=BASE_URL?>/js/compiled-app.min.js?v=<?php echo $settings->appVersion; ?>"></script>
 
-	<?php echo $frontController->includeAction('general.settingsCss'); ?>
+<!-- Admin CSS -->
+<?php echo $frontController->includeAction('general.settingsCss'); ?>
 
 </head>
 
