@@ -55,7 +55,7 @@ namespace leantime\domain\repositories {
 					tickets.editFrom,
 					tickets.editTo
 				FROM zp_tickets AS tickets
-				WHERE (tickets.editorId = :userId OR tickets.userId = :userId) AND tickets.type <> 'Milestone' AND tickets.type <> 'Subtask'";
+				WHERE (tickets.editorId = :userId OR tickets.userId = :userId) AND tickets.type <> 'Milestone' AND tickets.type <> 'Subtask' AND tickets.status <> '0'";
 
             $stmn = $this->db->database->prepare($userTickets);
             $stmn->bindValue(':userId', $id, PDO::PARAM_INT);

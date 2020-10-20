@@ -8,3 +8,12 @@ textarea {
 	width:100% !important;
 	text-align: left;
 }
+.mainwrapper,
+.maincontent,
+.maincontentinner,
+#calendar,
+.fc-content,
+.fc-view,
+table {
+	height:80%;
+}
