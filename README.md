@@ -1,4 +1,4 @@
-# Leantime #
+# Spleentime a Fork of Leantime #
 
 Leantime is a lean open source project management system for startups and innovators written in PHP, Javascript with MySQL. [https://leantime.io](https://leantime.io)
 <br /><br />
@@ -90,3 +90,8 @@ Once started you can go to `<yourdomain.com>/install` and run the installation s
 * Community Forum [https://community.leantime.io](https://community.leantime.io)
 * File a bug report [https://github.com/Leantime/leantime/issues/new](https://github.com/Leantime/leantime/issues/new)
 * Contact Us [https://leantime.io/contact/](https://leantime.io/contact)
+
+## Export only changed files for update package...
+```
+git diff-tree -r --no-commit-id --name-only 4c059a0 cef9815 | xargs tar -rf update.tar
+```
