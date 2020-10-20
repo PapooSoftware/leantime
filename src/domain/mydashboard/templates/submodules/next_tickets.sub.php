@@ -116,9 +116,13 @@ $cal = $this->get('calendar');
 												<li class="nav-header border"><?=$this->__("dropdown.choose_milestone")?></li>
 												<li class='dropdown-item'><a style='background-color:#1b75bb' href='javascript:void(0);' data-label="<?=$this->__("label.no_milestone")?>" data-value='<?=$row['id']."_0_#1b75bb"?>'> <?=$this->__("label.no_milestone")?> </a></li>
 
-												<?php foreach($this->get('milestones') as $milestone){
+
+												<?php
+												//print_r($row);
+												// here are the milestones...
+												foreach($this->get('milestones')[$row['projectId']] as $milestone){
 													echo"<li class='dropdown-item'>
-                                                                    <a href='javascript:void(0);' data-label='".$this->escape($milestone->headline)."' data-value='".$row['id']."_".$milestone->id."_".$this->escape($milestone->tags)."' id='ticketMilestoneChange".$row['id'].$milestone->id."' style='background-color:".$this->escape($milestone->tags)."'>".$this->escape($milestone->headline)."</a>";
+                                                                            <a href='javascript:void(0);' data-label='".$this->escape($milestone->headline)."' data-value='".$row['id']."_".$milestone->id."_".$this->escape($milestone->tags)."' id='ticketMilestoneChange".$row['id'].$milestone->id."' style='background-color:".$this->escape($milestone->tags)."'>".$this->escape($milestone->headline)."</a>";
 													echo"</li>";
 												}?>
 											</ul>
