@@ -4,3 +4,7 @@
 li.active a {
 	background:#be7d00 !important;
 }
+textarea {
+	width:100% !important;
+	text-align: left;
+}

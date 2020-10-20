@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html dir="<?php echo $language->__("language.direction"); ?>" lang="<?php echo $language->__("language.code"); ?>">
 <head>
-    <?php echo $frontController->includeAction('general.header'); ?>
+<?php echo $frontController->includeAction('general.header'); ?>
 
-    <link rel="stylesheet" href="<?=BASE_URL?>/css/main.css?v=<?php echo $settings->appVersion; ?>"/>
-    <link rel="stylesheet" href="<?=BASE_URL?>/css/style.default.css?v=<?php echo $settings->appVersion; ?>" type="text/css"/>
-    <link rel="stylesheet" href="<?=BASE_URL?>/css/style.custom.php?color=<?php echo htmlentities($_SESSION["companysettings.mainColor"]) ?>&v=<?php echo $settings->appVersion; ?>" type="text/css"/>
+<link rel="stylesheet" href="<?=BASE_URL?>/css/main.css?v=<?php echo $settings->appVersion; ?>"/>
+<link rel="stylesheet" href="<?=BASE_URL?>/css/style.default.css?v=<?php echo $settings->appVersion; ?>" type="text/css"/>
+<link rel="stylesheet" href="<?=BASE_URL?>/css/style.custom.php?color=<?php echo htmlentities($_SESSION["companysettings.mainColor"]) ?>&v=<?php echo $settings->appVersion; ?>" type="text/css"/>
+<link rel="stylesheet" href="<?=BASE_URL?>/css/spleantime.css?v=<?php echo $settings->appVersion; ?>" type="text/css"/>
+<link rel="stylesheet" href="<?=BASE_URL?>/css/codemirror.css?v=<?php echo $settings->appVersion; ?>"/>
 
-	<link rel="stylesheet" href="<?=BASE_URL?>/css/spleantime.css?v=<?php echo $settings->appVersion; ?>" type="text/css"/>
-    <script src="<?=BASE_URL?>/api/i18n"></script>
 
-    <!-- libs -->
-    <script src="<?=BASE_URL?>/js/compiled-base-libs.min.js?v=<?php echo $settings->appVersion; ?>"></script>
-    <script src="<?=BASE_URL?>/js/compiled-extended-libs.min.js?v=<?php echo $settings->appVersion; ?>"></script>
+<script src="<?=BASE_URL?>/api/i18n"></script>
 
-    <!-- app -->
-    <script src="<?=BASE_URL?>/js/compiled-app.min.js?v=<?php echo $settings->appVersion; ?>"></script>
+<!-- libs -->
+<script src="<?=BASE_URL?>/js/compiled-base-libs.min.js?v=<?php echo $settings->appVersion; ?>"></script>
+<script src="<?=BASE_URL?>/js/compiled-extended-libs.min.js?v=<?php echo $settings->appVersion; ?>"></script>
+
+<!-- app -->
+<script src="<?=BASE_URL?>/js/compiled-app.min.js?v=<?php echo $settings->appVersion; ?>"></script>
+
+	<?php echo $frontController->includeAction('general.settingsCss'); ?>
 
 </head>
 

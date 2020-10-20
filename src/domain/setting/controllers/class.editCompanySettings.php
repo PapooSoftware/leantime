@@ -35,48 +35,40 @@ namespace leantime\domain\controllers {
         }
 
         /**
-         * get - handle get requests
+         * get - handle get requests, gets all settings to be displayed in system
          *
          * @access public
-         * @param  paramters or body of the request
+         * @param  parameters or body of the request
          */
         public function get($params)
         {
             if(core\login::userIsAtLeast("admin")) {
 
-                $companySettings = array(
-                    "logo" => $_SESSION["companysettings.logoPath"],
-                    "color" => $_SESSION["companysettings.mainColor"],
-                    "name" => $_SESSION["companysettings.sitename"],
-                    "language" => $_SESSION["companysettings.language"]
-                );
+                $allSettings = $this->settingsRepo->getAllSettings();
 
-                $logoPath = $this->settingsRepo->getSetting("companysettings.logoPath");
-                if($logoPath !== false){
+                if (is_array($allSettings))
+				{
+					foreach ($allSettings as $settingsKey=>$settingsValue)
+					{
+						if($settingsValue !== false){
+							$companySettings[$settingsKey] = $settingsValue['0'];
+						}
+					}
+				}
+               #print_r($companySettings);
+               #exit();
+                //Should direct be activ whithout saving...
+				$companySettings2 = array(
+					"logo" => $_SESSION["companysettings.logoPath"],
+					"color" => $_SESSION["companysettings.mainColor"],
+					"name" => $_SESSION["companysettings.sitename"],
+					"language" => $_SESSION["companysettings.language"]
+				);
 
-                    if (strpos($logoPath, 'http') === 0) {
-                        $companySettings["logo"] = $logoPath;
-                    }else{
-                        $companySettings["logo"] = BASE_URL.$logoPath;
-                    }
-                }
+				$companySettings = array_merge($companySettings2,$companySettings);
 
-                $mainColor = $this->settingsRepo->getSetting("companysettings.mainColor");
-                if($mainColor !== false){
-                    $companySettings["color"] = $mainColor;
-                }
 
-                $sitename = $this->settingsRepo->getSetting("companysettings.sitename");
-                if($sitename !== false){
-                    $companySettings["name"] = $sitename;
-                }
-
-                $language = $this->settingsRepo->getSetting("companysettings.language");
-                if($language !== false){
-                    $companySettings["language"] = $language;
-                }
-
-                $this->tpl->assign("languageList", $this->language->getLanguageList());
+				$this->tpl->assign("languageList", $this->language->getLanguageList());
                 $this->tpl->assign("companySettings", $companySettings);
                 $this->tpl->display('setting.editCompanySettings');
 
@@ -100,6 +92,12 @@ namespace leantime\domain\controllers {
                 && isset($params['color'])  && $params['color'] != ""
                 && isset($params['language'])  && $params['language'] != "") {
 
+            	foreach($params as $paramKey => $paramValue)
+				{
+					$paramKey = str_ireplace("_",".",$paramKey);
+					$this->settingsRepo->saveSetting($paramKey, htmlentities(addslashes($paramValue)));
+				}
+				//exit();
                 $this->settingsRepo->saveSetting("companysettings.mainColor", htmlentities(addslashes($params['color'])));
                 $this->settingsRepo->saveSetting("companysettings.sitename", htmlentities(addslashes($params['name'])));
                 $this->settingsRepo->saveSetting("companysettings.language", htmlentities(addslashes($params['language'])));

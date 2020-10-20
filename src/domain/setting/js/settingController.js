@@ -59,6 +59,8 @@ leantime.settingController = (function () {
         jQuery("#previousImage").show();
     };
 
+
+
     var saveCroppie = function () {
 
         jQuery('#save-logo').addClass('running');

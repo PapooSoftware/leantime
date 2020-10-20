@@ -53,6 +53,8 @@ namespace leantime\core {
 
         public $template = '';
 
+        private $settingsRepo = "";
+
         public $picture = array(
             'calendar'    => 'iconfa-calendar',
             'clients'     => 'iconfa-group',
@@ -76,6 +78,8 @@ namespace leantime\core {
         public function __construct()
         {
             $this->controller = FrontController::getInstance();
+			$this->settingsRepo = new repositories\setting();
+
 
             $this->language = new language();
 
@@ -181,6 +185,7 @@ namespace leantime\core {
             $config = new config();
             $settings = new settings();
             $login = login::getInstance();
+            $allSettings = $this->settingsRepo->getAllSettings();
 
             $this->template = $template;
 
@@ -189,7 +194,7 @@ namespace leantime\core {
 
             $module = frontcontroller::getModuleName($template);
 
-                $strTemplate = '../src/domain/' . $module . '/templates/' . $action.'.tpl.php';
+            $strTemplate = '../src/domain/' . $module . '/templates/' . $action.'.tpl.php';
 
 
             if ((! file_exists($strTemplate)) || ! is_readable($strTemplate)) {

@@ -27,6 +27,27 @@ namespace leantime\domain\repositories {
 
         }
 
+		/**
+		 * @return array
+		 * Gets all Settings in one array...
+		 */
+        public function getAllSettings()
+		{
+			$sql = "SELECT
+						*
+				FROM zp_settings ";
+			$stmn = $this->db->database->prepare($sql);
+			$stmn->execute();
+			$values = $stmn->fetchAll(PDO::FETCH_COLUMN|PDO::FETCH_GROUP);
+			$stmn->closeCursor();
+			return $values;
+		}
+
+		/**
+		 * @param $type
+		 * @return false|mixed
+		 * Select a Setting - submit the key...
+		 */
         public function getSetting($type)
         {
 
@@ -56,6 +77,11 @@ namespace leantime\domain\repositories {
 
         }
 
+		/**
+		 * @param $type
+		 * @param $value
+		 * Saves one Setting Item... as key/Value pair - so you can add what yout want...
+		 */
         public function saveSetting($type, $value)
         {
 

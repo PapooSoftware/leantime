@@ -10922,3 +10922,246 @@
 [20-Oct-2020 06:06:41 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 67
 [20-Oct-2020 06:06:41 America/Los_Angeles] PHP Notice:  Undefined index: percent in /var/www/html/leantime/src/domain/mydashboard/templates/show.tpl.php on line 87
 [20-Oct-2020 06:06:41 America/Los_Angeles] PHP Notice:  Undefined index: percent in /var/www/html/leantime/src/domain/mydashboard/templates/show.tpl.php on line 87
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 37
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 40
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 43
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 45
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 60
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 67
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 37
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 40
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 43
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 45
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 60
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 67
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Undefined index: percent in /var/www/html/leantime/src/domain/mydashboard/templates/show.tpl.php on line 87
+[20-Oct-2020 06:29:41 America/Los_Angeles] PHP Notice:  Undefined index: percent in /var/www/html/leantime/src/domain/mydashboard/templates/show.tpl.php on line 87
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 37
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 40
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 43
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 45
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 60
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 67
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 37
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 40
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 43
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 45
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 60
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 67
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Undefined index: percent in /var/www/html/leantime/src/domain/mydashboard/templates/show.tpl.php on line 87
+[20-Oct-2020 06:38:01 America/Los_Angeles] PHP Notice:  Undefined index: percent in /var/www/html/leantime/src/domain/mydashboard/templates/show.tpl.php on line 87
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 37
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 40
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 43
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 45
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 60
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 67
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 37
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 40
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 43
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 45
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 60
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 67
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Undefined index: percent in /var/www/html/leantime/src/domain/mydashboard/templates/show.tpl.php on line 87
+[20-Oct-2020 06:39:28 America/Los_Angeles] PHP Notice:  Undefined index: percent in /var/www/html/leantime/src/domain/mydashboard/templates/show.tpl.php on line 87
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Warning:  array_merge(): Expected parameter 1 to be an array, bool given in /var/www/html/leantime/src/domain/tickets/services/class.tickets.php on line 188
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'tags' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/next_tickets.sub.php on line 121
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 37
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 40
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 43
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 45
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 60
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 67
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 37
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'editTo' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 40
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 43
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 45
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'id' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'headline' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 50
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 60
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 66
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Trying to get property 'percentDone' of non-object in /var/www/html/leantime/src/domain/mydashboard/templates/submodules/milestones.sub.php on line 67
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Undefined index: percent in /var/www/html/leantime/src/domain/mydashboard/templates/show.tpl.php on line 87
+[20-Oct-2020 07:05:00 America/Los_Angeles] PHP Notice:  Undefined index: percent in /var/www/html/leantime/src/domain/mydashboard/templates/show.tpl.php on line 87
+[20-Oct-2020 07:09:35 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 140
+[20-Oct-2020 07:09:43 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 140
+[20-Oct-2020 07:09:46 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 140
+[20-Oct-2020 07:10:06 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 140
+[20-Oct-2020 07:12:38 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 140
+[20-Oct-2020 07:12:47 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 140
+[20-Oct-2020 07:13:18 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 140
+[20-Oct-2020 07:14:13 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 140
+[20-Oct-2020 07:16:48 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:37:25 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:39:08 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:40:44 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:41:10 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:41:23 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:42:37 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:53:29 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:53:58 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:54:45 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:55:08 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:56:14 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:56:35 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:56:46 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:56:58 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 07:57:20 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:00:58 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:02:26 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:03:16 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:03:37 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:05:46 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:06:24 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:06:55 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:08:18 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:09:31 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:16:32 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:18:11 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:21:26 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:27:29 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:27:32 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:28:19 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:28:21 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:28:48 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:28:50 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:29:52 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:30:00 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:35:58 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:36:01 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.custom_css in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:36:58 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.customCss in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:37:01 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.customCss in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:37:05 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.customCss in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:37:07 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.customCss in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:37:13 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.customCss in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:39:17 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.customCss in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:39:19 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.customCss in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:39:21 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.customCss in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 08:40:19 America/Los_Angeles] PHP Notice:  Undefined index: companysettings.customCss in /var/www/html/leantime/src/domain/setting/templates/editCompanySettings.tpl.php on line 139
+[20-Oct-2020 14:13:21 America/Los_Angeles] PHP Notice:  Undefined variable: globalSettings in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:13:23 America/Los_Angeles] PHP Notice:  Undefined variable: globalSettings in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:13:24 America/Los_Angeles] PHP Notice:  Undefined variable: globalSettings in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:13:24 America/Los_Angeles] PHP Notice:  Undefined variable: globalSettings in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:13:44 America/Los_Angeles] PHP Notice:  Undefined variable: globalSettings in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:14:19 America/Los_Angeles] PHP Notice:  Undefined variable: globalSettings in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:14:21 America/Los_Angeles] PHP Notice:  Undefined variable: globalSettings in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:15:27 America/Los_Angeles] PHP Notice:  Undefined variable: settingRepo in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:15:28 America/Los_Angeles] PHP Notice:  Undefined variable: settingRepo in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:17:33 America/Los_Angeles] PHP Notice:  Undefined variable: settingRepo in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:17:33 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to undefined function leantime\domain\controllers\newrepositories\setting() in /var/www/html/leantime/src/domain/general/controllers/class.footer.php:18
+Stack trace:
+#0 /var/www/html/leantime/src/core/class.frontcontroller.php(148): leantime\domain\controllers\footer->__construct()
+#1 /var/www/html/leantime/src/core/class.frontcontroller.php(227): leantime\core\frontcontroller->executeAction()
+#2 /var/www/html/leantime/src/content.php(61): leantime\core\frontcontroller->includeAction()
+#3 /var/www/html/leantime/src/core/class.template.php(144): include('/var/www/html/l...')
+#4 /var/www/html/leantime/src/domain/setting/controllers/class.editCompanySettings.php(73): leantime\core\template->display()
+#5 /var/www/html/leantime/src/core/class.frontcontroller.php(164): leantime\domain\controllers\editCompanySettings->get()
+#6 /var/www/html/leantime/src/core/class.frontcontroller.php(107): leantime\core\frontcontroller->executeAction()
+#7 /var/www/html/leantime/src/core/class.application.php(93) in /var/www/html/leantime/src/domain/general/controllers/class.footer.php on line 18
+[20-Oct-2020 14:24:08 America/Los_Angeles] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:24:13 America/Los_Angeles] PHP Parse error:  syntax error, unexpected ';' in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:24:40 America/Los_Angeles] PHP Parse error:  syntax error, unexpected ';' in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:26:54 America/Los_Angeles] PHP Warning:  print_r() expects at least 1 parameter, 0 given in /var/www/html/leantime/src/core/class.application.php on line 54
+[20-Oct-2020 14:30:09 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'leantime\core\core\template' not found in /var/www/html/leantime/src/core/class.application.php:47
+Stack trace:
+#0 /var/www/html/leantime/public/index.php(41): leantime\core\application->start()
+#1 {main}
+  thrown in /var/www/html/leantime/src/core/class.application.php on line 47
+[20-Oct-2020 14:30:20 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Class 'leantime\core\core\template' not found in /var/www/html/leantime/src/core/class.application.php:47
+Stack trace:
+#0 /var/www/html/leantime/public/index.php(41): leantime\core\application->start()
+#1 {main}
+  thrown in /var/www/html/leantime/src/core/class.application.php on line 47
+[20-Oct-2020 14:31:24 America/Los_Angeles] PHP Notice:  Undefined variable: globalSettings in /var/www/html/leantime/src/content.php on line 11
+[20-Oct-2020 14:31:58 America/Los_Angeles] PHP Notice:  Undefined variable: globalSettings in /var/www/html/leantime/src/content.php on line 11
