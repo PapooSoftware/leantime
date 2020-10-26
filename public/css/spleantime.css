@@ -17,3 +17,16 @@ textarea {
 table {
 	height:80%;
 }
+.footer {
+	background: #efefef;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+.widgetcontent {
+border:1px solid #cccccc;
+}
+.maincontentinner .subtitle {
+	color: #4e4e4e;
+	font-weight: 600;
+}
