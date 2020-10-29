@@ -33,7 +33,7 @@ $cal = $this->get('calendar');
 
 				<?php foreach($this->get('allTicketsChanged') as $row){
 
-
+					//print_r($row);
 					if($row['dateModified'] == "0000-00-00 00:00:00" || $row['dateToFinish'] == "1969-12-31 00:00:00") {
 						$date = $this->__("text.anytime");
 
@@ -46,20 +46,25 @@ $cal = $this->get('calendar');
 					<li class="ui-state-default" id="ticket_<?php echo $row['id']; ?>" >
 						<div class="ticketBox fixed" data-val="<?php echo $row['id']; ?>">
 							<div class="row">
-								<div class="col-md-12 timerContainer" style="padding:5px 15px;" id="timerContainer-<?php echo $row['id'];?>">
-									<?php echo $row['projectName'];?>: <strong><a href="<?=BASE_URL ?>/tickets/showTicket/<?php echo $row['id'];?>" ><?php $this->e($row['headline']); ?></a></strong>
+								<div class="col-md-12 timerContainer" style="padding:5px 15px;" id="timerContainer-<?php echo $row['ticketId'];?>">
+									<?php echo $row['projectName'];?>: <strong><a href="<?=BASE_URL ?>/tickets/showTicket/<?php echo $row['ticketId'];?>" ><?php $this->e($row['headline']); ?></a></strong>
 
-									<?php
 
-									if ($login::userIsAtLeast("developer")) {
-										$clockedIn = $this->get("onTheClock");
-										?>
-									<?php } ?>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-12" style="padding:0 15px;">
+								<div class="col-md-4" style="padding:0 15px;">
+									<?php echo $this->__("label.from"); ?>: <?php echo $row['editorFirstname']; ?>
+								</div>
+								<div class="col-md-8" style="padding:0 15px;">
 									<?php echo $this->__("label.changed"); ?>: <?php echo $date; ?>
+								</div>
+
+								<div class="col-md-4" style="padding:0 15px;">
+									<?php echo $this->__("label.field"); ?>: <?php echo $row['changeType']; ?>
+								</div>
+								<div class="col-md-8" style="padding:0 15px;">
+									<?php echo $this->__("label.to"); ?>: <?php echo $row['changeValue']; ?>
 								</div>
 								<div class="col-md-12" style="padding-top:3px;" >
 									<div class="right">
