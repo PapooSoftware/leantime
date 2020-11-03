@@ -5,6 +5,7 @@ namespace leantime\domain\controllers {
     use leantime\core;
     use leantime\domain\repositories;
     use leantime\domain\services;
+	use pdo;
 
     class showProject
     {
@@ -189,7 +190,11 @@ namespace leantime\domain\controllers {
 
                         } else {
 
+                        	//edit Projectdata
                             $projectRepo->editProject($values, $id);
+
+                            //set status tabs
+							$this->updateSettingsProjectStatusLabels($_POST['psettings']['allow_more_stati']);
 
                             $project = $projectRepo->getProject($id);
                             $project['assignedUsers'] = $projectRepo->getProjectUserRelation($id);
@@ -407,6 +412,16 @@ namespace leantime\domain\controllers {
 
                 //Assign vars
                 $ticket = new repositories\tickets();
+				$ticketService = new services\tickets();
+				$allTicketStates = $ticketService->getStatusLabels();
+				//print_r($allTicketStates);
+				#print_r($project);
+				$text ="";
+				foreach ($allTicketStates as $tk=>$tv)
+				{
+					$text.=$tv['name']."\n";
+				}
+				$project['psettings']['allow_more_stati']=$text;
                 $tpl->assign('imgExtensions', array('jpg', 'jpeg', 'png', 'gif', 'psd', 'bmp', 'tif', 'thm', 'yuv'));
                 $tpl->assign('projectTickets', $projectRepo->getProjectTickets($id));
                 $tpl->assign('projectPercentage', $projectPercentage);
@@ -458,6 +473,51 @@ namespace leantime\domain\controllers {
             }
 
         }
+
+		/**
+		 * @param string $ticketlabels string
+		 * @return bool
+		 */
+        private function updateSettingsProjectStatusLabels($ticketlabels="")
+		{
+			$this->db = core\db::getInstance();
+			$ticketlabels = trim($ticketlabels);
+			$ticketlabelsArray = explode("\n",$ticketlabels);
+			$max = count($ticketlabelsArray)-1;
+			$save = array();
+			#print_r($ticketlabelsArray);
+
+			foreach ($ticketlabelsArray as $k=>$v)
+			{
+				//last one
+				if ($max == $k)
+				{
+					$save["-1"]=$v;
+					continue;
+				}
+
+				//normal one
+				$save[$k]=$v;
+			}
+
+			$saveSer = serialize($save);
+
+			$sql = "UPDATE zp_settings
+						SET
+						`value` = :save
+						WHERE `key` = :key
+						LIMIT 1";
+
+			$stmn = $this->db->database->prepare($sql);
+			$stmn->bindvalue(':key', "projectsettings.".$_SESSION['currentProject'].".ticketlabels", PDO::PARAM_STR);
+			$stmn->bindvalue(':save', $saveSer, PDO::PARAM_STR);
+
+			$stmn->execute();
+			#exit();
+			$stmn->closeCursor();
+
+			return true;
+		}
 
         private function generateOfcData()
         {

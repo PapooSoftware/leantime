@@ -37,6 +37,15 @@ namespace leantime\domain\services {
 
         }
 
+		public function getNewStatusLabels() {
+
+			return $this->ticketRepository->getNewStateLabels();
+
+		}
+
+
+
+
         public function getTypeIcons() {
 
             return $this->ticketRepository->typeIcons;

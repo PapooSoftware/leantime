@@ -30,13 +30,13 @@ namespace leantime\domain\repositories {
          * @access public
          * @var    array
          */
-        public $statusClasses = array('3' => 'label-info', '1' => 'label-important', '4' => 'label-warning', '2' => 'label-warning', '0' => 'label-success', "-1" =>"label-default");
+        public $statusClasses = array('1' => 'label-info', '2' => 'label-important', '3' => 'label-warning', '4' => 'label-warning', '5' => 'label-success', "-1" =>"label-default");
 
         /**
          * @access public
          * @var    array
          */
-        public $statusNumByKey = array('NEW' => 3, 'ERROR' => 1, 'INPROGRESS' => 4, 'APPROVAL' => 2, 'FINISHED' => 0, "ARCHIVED" =>-1);
+        public $statusNumByKey = array('NEW' => 1, 'ERROR' => 2, 'INPROGRESS' => 3, 'APPROVAL' => 4, 'FINISHED' => 5, "ARCHIVED" =>-1);
 
 
         /**
@@ -44,11 +44,11 @@ namespace leantime\domain\repositories {
          * @var    array
          */
         public $statusList = array(
-            '3' => 'status.new', //New
-            '1' => 'status.blocked', //In Progress
-            '4' => 'status.in_progress', //In Progress
-            '2' => 'status.waiting_for_approval', //In Progress
-            '0' => 'status.done', //Done
+            '1' => 'status.new', //New
+            '2' => 'status.blocked', //In Progress
+            '3' => 'status.in_progress', //In Progress
+            '4' => 'status.waiting_for_approval', //In Progress
+            '5' => 'status.done', //Done
             '-1' => 'status.archived' //Done
         );
 
@@ -122,6 +122,17 @@ namespace leantime\domain\repositories {
 
         }
 
+		public function getNewStateLabels()
+		{
+			$new ="";
+			//preseed state labels with default values
+			foreach($this->statusList as $key=>$label) {
+				$new.=$this->language->__($label)."\n";
+			}
+			return $new;
+
+		}
+
         public function getStateLabels()
         {
             //Todo: Remove!
@@ -147,6 +158,7 @@ namespace leantime\domain\repositories {
 
                 $labels = array();
 
+                /**
                 //preseed state labels with default values
                 foreach($this->statusList as $key=>$label) {
                     $labels[$key] = array(
@@ -154,6 +166,9 @@ namespace leantime\domain\repositories {
                         "class" => $this->statusClasses[$key]
                     );
                 }
+				 * **/
+                #print_r(unserialize($values));
+                #exit();
 
                 //Override the state values that are in the db
                 if($values !== false) {
@@ -166,10 +181,15 @@ namespace leantime\domain\repositories {
                         }else{
                             $numericKey = $key;
                         }
+                        $classLabel = $this->statusClasses[$numericKey];
+                        if (empty($classLabel))
+						{
+							$classLabel ="label-warning";
+						}
 
                         $labels[$numericKey] = array(
                             "name" => $label,
-                            "class" => $this->statusClasses[$numericKey]
+                            "class" => $classLabel
                         );
                     }
 

@@ -144,9 +144,7 @@ $helper = $this->get('helper');
 
 							<option value="1" <?php if($project['psettings']['ticketLayout'] == 1) { ?> selected=selected
 							<?php } ?>><?php echo $this->__('label.oneView'); ?></option>
-
 						</select>
-
 					</div>
 				</div>
 			</div>
@@ -160,20 +158,17 @@ $helper = $this->get('helper');
 
 							<option value="1" <?php if($project['psettings']['commentOrder'] == "1") { ?> selected=selected
 							<?php } ?>><?php echo $this->__('label.downtoup'); ?></option>
-
 						</select>
-
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="span4">
 			<div class="form-group">
-				<label class="span4 control-label" for="allow_more_stati"><?php echo $this->__('label.allow_more_stati'); ?></label>
-				<div class="span6">
-					<div class="span6">
-						<input type='checkbox' name='psettings[allow_more_stati]' id="allow_more_stati" value='1'
-							<?php  if($project['psettings']['allow_more_stati'] == "1"){ ?> checked="checked"<?php } ?>/>
+				<label class="span12 control-label" for="allow_more_stati"><?php echo $this->__('label.allow_more_stati'); ?></label>
+				<div class="span12">
+					<div class="span11">
+						<textarea name="psettings[allow_more_stati]" id="allow_more_stati" class="allow_more_stati" rows="10" cols="50"><?php echo $project['psettings']['allow_more_stati'] ?></textarea>
 					</div>
 				</div>
 			</div>
@@ -188,6 +183,5 @@ $helper = $this->get('helper');
             </div>
         <?php endif; ?>
         <input type="submit" name="save" id="save" class="button" value="<?php echo $this->__('buttons.save'); ?>" class="button" />
-
     </div>
 </form>

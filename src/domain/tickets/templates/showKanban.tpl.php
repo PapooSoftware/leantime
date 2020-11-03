@@ -13,7 +13,19 @@
     //All states >0 (<1 is archive)
     $numberofColumns = count($this->get('allTicketStates'))-1;
     $size = floor(100 / $numberofColumns);
-
+    if ($size < 17)
+	{
+		$size=17;
+	}
+    if ($numberofColumns*$size <= 101)
+	{
+		$rowSize = 100;
+		$rowMinWidth="100%;";
+	}
+    else{
+		$rowSize = ($numberofColumns*$size)+($numberofColumns*6);
+		$rowMinWidth = $numberofColumns*300;
+	}
 ?>
 
  <div class="pageheader">
@@ -177,8 +189,8 @@
 
 		<div id="sortableTicketKanban" class="sortableTicketList">
 			
-			<div class="row-fluid">
-				
+			<div class="row-fluid" style="width:<?=$rowSize?>%;min-width: <?=$rowMinWidth?>px !important;max-width: <?=$rowMinWidth+300;?>px !important;">
+
 				<?php
 
 				foreach($this->get('allTicketStates') as $key => $statusRow){ 	
@@ -188,7 +200,7 @@
 
 					?>
 						
-						<div class="column" style="width:<?=$size?>%;">
+						<div class="column" style="width:<?=$size?>%; max-width:300px;">
 							
                             <h4 class="widgettitle title-primary titleBorderColor<?php echo $key; ?>">
                             <?php if ($login::userIsAtLeast("clientManager")) { ?>

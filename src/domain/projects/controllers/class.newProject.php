@@ -5,6 +5,7 @@ namespace leantime\domain\controllers {
     use leantime\core;
     use leantime\domain\repositories;
     use leantime\domain\services;
+	use pdo;
 
     class newProject
     {
@@ -33,6 +34,8 @@ namespace leantime\domain\controllers {
                 $tpl->display('general.error');
                 exit();
             }
+			$psettings = array();
+            $psettings['allow_more_stati']=$ticketService->getNewStatusLabels();
 
             $msgKey = '';
             $values = array(
@@ -43,7 +46,8 @@ namespace leantime\domain\controllers {
                 'hourBudget' => '',
                 'assignedUsers' => array($_SESSION['userdata']['id']),
                 'dollarBudget' => '',
-                'state' => ''
+                'state' => '',
+				'psettings' => $psettings
             );
 
             if (isset($_POST['save']) === true) {
@@ -61,6 +65,14 @@ namespace leantime\domain\controllers {
                     $assignedUsers = array();
                 }
 
+				if(empty($_POST['psettings']))
+				{
+					$psettings = serialize(array());
+				}
+				else{
+					$psettings = serialize($_POST['psettings']);
+				}
+
 
                 $mailer = new core\mailer();
 
@@ -72,6 +84,7 @@ namespace leantime\domain\controllers {
                     'assignedUsers' => $assignedUsers,
                     'dollarBudget' => $_POST['dollarBudget'],
                     'state' => $_POST['projectState'],
+					'psettings' => $psettings
                 );
 
                 if ($values['name'] === '') {
@@ -87,6 +100,8 @@ namespace leantime\domain\controllers {
                     $projectName = $values['name'];
                     $id = $projectRepo->addProject($values);
                     $projectService->changeCurrentSessionProject($id);
+
+
 
                     $users = $projectRepo->getUsersAssignedToProject($id);
 
@@ -110,6 +125,9 @@ namespace leantime\domain\controllers {
                     $values['details'] = $_POST['details'];
 
                     $tpl->setNotification(sprintf($language->__('notifications.project_created_successfully'), BASE_URL.'/leancanvas/simpleCanvas/'), 'success');
+					$_SESSION['currentProject'] = $id;
+					//set status tabs
+					$this->updateSettingsProjectStatusLabels($_POST['psettings']['allow_more_stati']);
 
                     $tpl->redirect(BASE_URL."/projects/showProject/". $id);
 
@@ -119,6 +137,7 @@ namespace leantime\domain\controllers {
                 $tpl->assign('values', $values);
 
             }
+
 
 
             $tpl->assign('project', $values);
@@ -141,6 +160,51 @@ namespace leantime\domain\controllers {
 
 
         }
+
+		/**
+		 * @param string $ticketlabels string
+		 * @return bool
+		 */
+		private function updateSettingsProjectStatusLabels($ticketlabels="")
+		{
+			$this->db = core\db::getInstance();
+			$ticketlabels = trim($ticketlabels);
+			$ticketlabelsArray = explode("\n",$ticketlabels);
+			$max = count($ticketlabelsArray)-1;
+			$save = array();
+			#print_r($ticketlabelsArray);
+
+			foreach ($ticketlabelsArray as $k=>$v)
+			{
+				//last one
+				if ($max == $k)
+				{
+					$save["-1"]=$v;
+					continue;
+				}
+
+				//normal one
+				$save[$k]=$v;
+			}
+
+			$saveSer = serialize($save);
+
+			$sql = "INSERT INTO zp_settings
+						SET
+						`value` = :save,
+						 `key` = :key
+					";
+
+			$stmn = $this->db->database->prepare($sql);
+			$stmn->bindvalue(':key', "projectsettings.".$_SESSION['currentProject'].".ticketlabels", PDO::PARAM_STR);
+			$stmn->bindvalue(':save', $saveSer, PDO::PARAM_STR);
+
+			$stmn->execute();
+			#exit();
+			$stmn->closeCursor();
+
+			return true;
+		}
 
     }
 
