@@ -174,6 +174,9 @@ namespace leantime\domain\repositories {
                     }
 
                 }
+                //print_r($labels);exit();
+				#$labels['5']['name']="test";
+				#$labels['5']['class']="label-info";
 
                 $_SESSION["projectsettings"]["ticketlabels"] = $labels;
 

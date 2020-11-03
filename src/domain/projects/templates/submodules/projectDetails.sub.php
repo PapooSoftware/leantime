@@ -150,8 +150,6 @@ $helper = $this->get('helper');
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="span4">
 			<div class="form-group">
 				<label class="span4 control-label" for="commentOrder"><?php echo $this->__('label.comment_order'); ?></label>
 				<div class="span6">
@@ -165,6 +163,17 @@ $helper = $this->get('helper');
 
 						</select>
 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="span4">
+			<div class="form-group">
+				<label class="span4 control-label" for="allow_more_stati"><?php echo $this->__('label.allow_more_stati'); ?></label>
+				<div class="span6">
+					<div class="span6">
+						<input type='checkbox' name='psettings[allow_more_stati]' id="allow_more_stati" value='1'
+							<?php  if($project['psettings']['allow_more_stati'] == "1"){ ?> checked="checked"<?php } ?>/>
 					</div>
 				</div>
 			</div>
