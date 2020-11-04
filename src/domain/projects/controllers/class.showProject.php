@@ -503,11 +503,12 @@ namespace leantime\domain\controllers {
 			$saveSer = serialize($save);
 
 			//Checken ob der Eintrag existiert
-			$sql = "SELECT value FROM zp_settings WHERE `key` = :key";
+			$sql = "SELECT `value` FROM zp_settings WHERE `key` = :key";
 			$stmn = $this->db->database->prepare($sql);
-			$stmn->bindvalue(':key', "projectsettings.".$_SESSION['currentProject'].".ticketlabelsx", PDO::PARAM_STR);
+			$stmn->bindvalue(':key', "projectsettings.".$_SESSION['currentProject'].".ticketlabels", PDO::PARAM_STR);
 			$stmn->execute();
 			$result = $stmn->fetchAll();
+			$stmn->closeCursor();
 
 			//wenn existiert - dann update - ansonsten insert
 			$updIns = "UPDATE ";
@@ -519,7 +520,7 @@ namespace leantime\domain\controllers {
 			$sql = $updIns." zp_settings
 						SET
 						`value` = :save
-						WHERE `key` = :key
+						WHERE     `key` = :key
 						LIMIT 1";
 
 			$stmn = $this->db->database->prepare($sql);
