@@ -11,7 +11,7 @@
 	<div class="span12">
 		<div class="row-fluid">
 			<div class="span12">
-				<h4 class="widgettitle title-light"><span
+				<h4 class="widgettitle title-lightno"><span
 							class="iconfa iconfa-leaf"></span><?php echo $this->__('subtitle.settings'); ?>
 				</h4>
 

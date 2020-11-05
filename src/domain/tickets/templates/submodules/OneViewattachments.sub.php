@@ -2,7 +2,7 @@
 $ticket = $this->get('ticket');
 ?>
 
-<h4 class="widgettitle title-light"><span class="fa fa-list-ul"></span><?php echo $this->__('subtitles.files'); ?></h4>
+<h4 class="widgettitle title-lightno"><span class="fa fa-list-ul"></span><?php echo $this->__('subtitles.files'); ?></h4>
 <div class="mediamgr_category">
     
 

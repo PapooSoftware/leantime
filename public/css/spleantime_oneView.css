@@ -55,3 +55,14 @@ table.allTickets th {
 table.allTickets td {
 	vertical-align: top !important;
 }
+.rowhead {
+	margin-left:20px;
+	width:97.1% !important;
+	overflow: hidden;
+	margin-bottom:0px;
+}
+.widgettitle {
+	margin-top:20px;
+	margin-bottom:10px;
+	background-color:#454545;
+}

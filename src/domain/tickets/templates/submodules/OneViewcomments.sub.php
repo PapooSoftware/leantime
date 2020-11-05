@@ -11,7 +11,7 @@ if (strpos($formUrl, '?delComment=') !== false) {
 }
 ?>
 
-<h4 class="widgettitle title-light"><span
+<h4 class="widgettitle title-lightno"><span
 		class="fa fa-comments"></span><?php echo $this->__('subtitles.discussion'); ?>
 </h4>
 

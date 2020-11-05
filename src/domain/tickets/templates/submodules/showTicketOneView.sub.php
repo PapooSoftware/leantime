@@ -29,6 +29,9 @@
 
 		<form class="" id="baseForm" action="<?=BASE_URL ?>/tickets/showTicket/<?php echo $ticket->id ?>" method="post" enctype="multipart/form-data" >
 				<div class="row">
+
+						<!--<h4 class="widgettitle rowhead"><span class="iconfa iconfa-leaf"></span>Ticket: <?php $this->e($ticket->headline); ?></h4>
+-->
 					<div class="col-md-9 white-background ticketContainer">
 						<div class="subrow white-background"><?php $this->displaySubmodule('tickets-OneViewBase') ?></div>
 						<div class="subrow white-background"><?php $this->displaySubmodule('tickets-OneViewsubTasks') ?></div>
@@ -37,7 +40,7 @@
 					</div>
 					<div class="col-md-3 rightWing white-background ticketContainer">
 						<?php $this->displaySubmodule('tickets-OneViewBaseDatPrime') ?>
-						<?php $this->displaySubmodule('tickets-OneViewBaseDataMore') ?>
+						<?php $this->displaySubmodule('tickets-OneViewBaseDat') ?>
 					</div>
 				</div>
 				<div class="row-fluid white-background ticketContainer pull-leftsub">

@@ -4,7 +4,7 @@
     $statusLabels  = $this->get('statusLabels');
 ?>
 
-<h4 class="widgettitle title-light"><span class="fa fa-list-ul"></span><?php echo $this->__('subtitles.subtasks'); ?></h4>
+<h4 class="widgettitle title-lightno"><span class="fa fa-list-ul"></span><?php echo $this->__('subtitles.subtasks'); ?></h4>
 <p><?=$this->__('text.what_are_subtasks') ?><br /><br /></p>
 
 <table cellpadding="0" cellspacing="0" border="0" class="allTickets table table-bordered"
@@ -13,11 +13,11 @@
     <thead>
         <tr>
             <th width="15%" class="title-light"><?php echo $this->__('label.headline'); ?></th>
-            <th  width="30%"><?php echo $this->__('label.description'); ?></th>
+            <th  width="25%"><?php echo $this->__('label.description'); ?></th>
             <th width="15%"><?php echo $this->__('label.todo_status'); ?></th>
             <th width="10%"><?php echo $this->__('label.planned_hours'); ?></th>
             <th width="10%"><?php echo $this->__('label.actual_hours_remaining'); ?></th>
-            <th width="10%"><?php echo $this->__('label.actions'); ?></th>
+            <th width="12%"><?php echo $this->__('label.actions'); ?></th>
         </tr>
     </thead>
     <tbody>
@@ -45,8 +45,11 @@
             <td><input type="text" value="<?php echo $this->e($subticket['planHours']); ?>" name="planHours" class="small-input"/></td>
             <td><input type="text" value="<?php echo $this->e($subticket['hourRemaining']); ?>" name="hourRemaining" class="small-input"/></td>
                 <td><input type="hidden" value="<?php echo $subticket['id']; ?>" name="subtaskId" />
-                    <input type="submit" value="<?php echo $this->__('buttons.save'); ?>" name="subtaskSave"/>
-                    <input type="submit" value="<?php echo $this->__('buttons.delete'); ?>" class="delete" name="subtaskDelete"/>
+					<!--<input type="submit" value="<?php echo $this->__('buttons.save'); ?>" name="subtaskSave"/>
+                   <input type="submit" value="<?php echo $this->__('buttons.delete'); ?>" class="delete" name="subtaskDelete"/>-->
+
+					<button name="subtaskSave"><span class="fa fa-save"></span></button>
+					<button name="subtaskDelete"><span class="fa fa-trash"></span></button>
 				</td>
 
             
@@ -72,7 +75,10 @@
         </td>
         <td><input type="text" value="" name="planHours" style="width:100px;"/></td>
         <td><input type="text" value="" name="hourRemaining" style="width:100px;"/></td>
-        <td><input type="hidden" value="new" name="subtaskId" /><input type="submit" value="<?php echo $this->__('buttons.save'); ?>" name="subtaskSave"/></td>
+        <td><input type="hidden" value="new" name="subtaskId" />
+			<!--<input type="submit" value="<?php echo $this->__('buttons.save'); ?>" name="subtaskSave"/>-->
+			<button name="subtaskSave"><span class="fa fa-save"></span></button>
+		</td>
 
     </tr>
     </tbody>
