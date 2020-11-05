@@ -1,0 +1,57 @@
+.rightWing select {
+	max-width:100% !important;
+}
+
+.rightWing #tags_tagsinput {
+	max-width:100% !important;
+}
+
+form {
+	width:100% !important;
+	padding:0px;
+	margin:0px;
+}
+.white-background {
+	background:#fff;
+}
+.ticketContainer{
+	margin-left:20px;
+	margin-bottom: 20px;
+	min-height:50px;
+	padding-bottom:20px;
+
+	border:1px solid #efefef;
+}
+.rightWing {
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 21%;
+	-ms-flex: 0 0 21%;
+	flex: 0 0 21%;
+	max-width: 21%;
+	overflow:hidden;
+}
+input.headline {
+	line-height:1.2rem;
+}
+.pull-leftsub {
+	margin-left:0px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.subrow {
+	margin-bottom: 20px;
+}
+.commentBox .tox-editor-header {
+	display:none !important;
+}
+.commentBox .tox-tinymce {
+	height:150px !important;
+}
+table.allTickets th {
+	background:#ccc !important;
+	color:#333 !important;
+	margin-bottom: 5px;
+}
+table.allTickets td {
+	vertical-align: top !important;
+}

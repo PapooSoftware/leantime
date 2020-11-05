@@ -544,9 +544,9 @@ namespace leantime\domain\services {
             $subtaskId = $values['subtaskId'];
 
             $values = array(
-                'headline' => $values['headline'],
+                'headline' => $values['subtaskheadline'],
                 'type' => 'subtask',
-                'description' => $values['description'],
+                'description' => $values['subtaskdescription'],
                 'projectId' => $parentTicket->projectId,
                 'editorId' => $_SESSION['userdata']['id'],
                 'userId' => $_SESSION['userdata']['id'],
