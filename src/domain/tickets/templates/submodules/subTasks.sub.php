@@ -31,9 +31,9 @@
         ?>
         <tr>
             <form method="post" action="#subtasks">
-                <td><input type="text" value="<?php $this->e($subticket['headline']); ?>" name="headline"/></td>
-                <td><textarea  name="description" style="width:80%"><?php $this->e($subticket['description']) ?></textarea></td>
-                <td style="width:150px;" ><select class="span11 status-select" name="status" style="width:150px;"  data-placeholder="">
+                <td><input type="text" value="<?php $this->e($subticket['headline']); ?>" name="subtaskheadline"/></td>
+                <td><textarea  name="subtaskdescription" style="width:80%"><?php $this->e($subticket['description']) ?></textarea></td>
+                <td style="width:150px;" ><select class="span11 status-select" name="subtaskstatus" style="width:150px;"  data-placeholder="">
                         <?php foreach($statusLabels as $key=>$label){?>
                             <option value="<?php echo $key; ?>"
                                 <?php if($subticket['status'] == $key) {echo"selected='selected'";
@@ -42,8 +42,8 @@
                         <?php } ?>
                     </select>
                 </td>
-            <td><input type="text" value="<?php echo $this->e($subticket['planHours']); ?>" name="planHours" class="small-input"/></td>
-            <td><input type="text" value="<?php echo $this->e($subticket['hourRemaining']); ?>" name="hourRemaining" class="small-input"/></td>
+            <td><input type="text" value="<?php echo $this->e($subticket['planHours']); ?>" name="subtaskplanHours" class="small-input"/></td>
+            <td><input type="text" value="<?php echo $this->e($subticket['hourRemaining']); ?>" name="subtaskhourRemaining" class="small-input"/></td>
                 <td><input type="hidden" value="<?php echo $subticket['id']; ?>" name="subtaskId" />
                     <input type="submit" value="<?php echo $this->__('buttons.save'); ?>" name="subtaskSave"/>
                     <input type="submit" value="<?php echo $this->__('buttons.delete'); ?>" class="delete" name="subtaskDelete"/></td>
@@ -59,18 +59,18 @@
     <tr><td colspan="6" style="background:#ccc;"><strong><?php echo $this->__('text.create_new_subtask'); ?></strong></td></tr>
     <tr>
         <form method="post" action="#subtasks">
-        <td><input type="text" value="" name="headline"/></td>
-        <td><textarea  name="description" style="width:80%"></textarea></td>
+        <td><input type="text" value="" name="subtaskheadline"/></td>
+        <td><textarea  name="subtaskdescription" style="width:80%"></textarea></td>
         <td style="width:150px;">
-            <select class="span11 status-select" name="status"  style="width:150px;" data-placeholder="">
+            <select class="span11 status-select" name="subtaskstatus"  style="width:150px;" data-placeholder="">
                 <?php foreach($statusLabels as $key=>$label){?>
                     <option value="<?php echo $key; ?>"
                     ><?php echo $this->escape($label["name"]); ?></option>
                 <?php } ?>
             </select>
         </td>
-        <td><input type="text" value="" name="planHours" style="width:100px;"/></td>
-        <td><input type="text" value="" name="hourRemaining" style="width:100px;"/></td>
+        <td><input type="text" value="" name="subtaskplanHours" style="width:100px;"/></td>
+        <td><input type="text" value="" name="subtaskhourRemaining" style="width:100px;"/></td>
         <td><input type="hidden" value="new" name="subtaskId" /><input type="submit" value="<?php echo $this->__('buttons.save'); ?>" name="subtaskSave"/></td>
         </form>
     </tr>

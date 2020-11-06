@@ -178,6 +178,25 @@ namespace leantime\domain\controllers {
                     }
                 }
 
+                //Get Subtaskid From Buttons if is OneView...
+				if (is_numeric($params['subtaskSave']))
+				{
+					$params['subtaskId']=$params['subtaskSave'];
+					$params = array_merge($params,$params[$params['subtaskSave']]);
+				}
+				if($params['subtaskSave']=="new")
+				{
+					$params['subtaskId']=$params['subtaskSave'];
+					$params = array_merge($params,$params[$params['subtaskSave']]);
+				}
+
+				if (is_numeric($params['subtaskDelete']))
+				{
+					$params['subtaskId']=$params['subtaskDelete'];
+				}
+				#print_r($params);
+				#exit();
+
                 //Save Substask
                 if (isset($params['subtaskSave']) === true) {
 
@@ -193,6 +212,7 @@ namespace leantime\domain\controllers {
                 if (isset($params['subtaskDelete']) === true) {
 
                     $subtaskId = $params['subtaskId'];
+					//$subtaskId = $params['subtaskDelete'];
                     if($this->ticketService->deleteTicket($subtaskId)) {
                         $this->tpl->setNotification($this->language->__("notifications.subtask_deleted"), "success");
                     }else {

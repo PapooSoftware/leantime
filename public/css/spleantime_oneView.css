@@ -66,3 +66,14 @@ table.allTickets td {
 	margin-bottom:10px;
 	background-color:#454545;
 }
+.btn-success {
+	color: #ffffff;
+	background-color: #66a34e;
+	border-color: #1b621b;
+}
+
+.btn-danger {
+	color: #ffffff;
+	background-color: #8b2222;
+	border-color: #701e1e;
+}
