@@ -225,9 +225,10 @@ namespace leantime\domain\services {
             );
 
             foreach($allTickets as $row){
+            	//print_r($row);
 
             	//Status done...
-				if ($row['status']==0)
+				if ($row['done']==1)
 				{
 					$tickets["done"][] = $row;
 				}
@@ -450,8 +451,10 @@ namespace leantime\domain\services {
                 'acceptanceCriteria' => $values['acceptanceCriteria'],
                 'editFrom' => $values['editFrom'],
                 'editTo' => $values['editTo'],
-				'dependingTicketId' => $values['dependingTicketId']
+				'dependingTicketId' => $values['dependingTicketId'],
+				'done' => $values['done']
             );
+
 
             if(!$this->projectService->isUserAssignedToProject($_SESSION['userdata']['id'], $values['projectId'])) {
 
@@ -555,7 +558,8 @@ namespace leantime\domain\services {
                 'status' => $values['subtaskstatus'],
                 'storypoints' => "",
                 'hourRemaining' => $values['subtaskhourRemaining'],
-                'planHours' => $values['subtaskplanHours'],
+				'planHours' => $values['subtaskplanHours'],
+				'done' => $values['subtaskdone'],
                 'sprint' => "",
                 'acceptanceCriteria' => "",
                 'tags' => "",

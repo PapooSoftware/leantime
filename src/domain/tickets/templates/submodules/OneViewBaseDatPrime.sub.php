@@ -75,6 +75,15 @@
 				<div class="form-group">
 
 					<div class="span12">
+						<label for="done" class="doneLabel control-label"><?php echo $this->__('label.todo_done'); ?></label>
+						<input  class="right doneLabelcheckbox"  type="checkbox" id="done" name="done"
+							   value="1" <?php if ($ticket->done==1){ ?>checked="checked"<?php }?>/>
+
+					</div>
+				</div>
+				<div class="form-group">
+
+					<div class="span12">
 						<label class=" control-label"><?php echo $this->__('label.sprint'); ?></label>
 						<select id="sprint-select" class="span12" name="sprint"
 								data-placeholder="<?php echo $ticket->sprint ?>">

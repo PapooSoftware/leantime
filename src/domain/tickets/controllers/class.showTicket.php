@@ -49,6 +49,7 @@ namespace leantime\domain\controllers {
 
                 $id = (int)($params['id']);
                 $ticket = $this->ticketService->getTicket($id);
+                //print_r($ticket);
 				$_SESSION["currentProject"] = $ticket->projectId;
 				$this->projectService->changeCurrentSessionProject($ticket->projectId);
 				//do not return to the overview... stay in tickets...
@@ -84,6 +85,7 @@ namespace leantime\domain\controllers {
                         $this->tpl->setNotification($this->language->__("notifications.comment_deleted_error"), "error");
                     }
                 }
+
 
                 $this->tpl->assign('ticket', $ticket);
                 $this->tpl->assign('statusLabels', $this->ticketService->getStatusLabels());
@@ -219,8 +221,6 @@ namespace leantime\domain\controllers {
                         $this->tpl->setNotification($this->language->__("notifications.subtask_delete_error"), "error");
                     }
                 }
-
-
 
                 //Save Ticket
                 if (isset($params["saveTicket"]) === true || isset($params["saveAndCloseTicket"]) === true) {

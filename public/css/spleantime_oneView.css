@@ -77,3 +77,10 @@ table.allTickets td {
 	background-color: #8b2222;
 	border-color: #701e1e;
 }
+.doneLabel {
+	width:50% !important;
+	float:left !important;
+}
+.subtaskchecked {
+	background: #edf1ea;
+}

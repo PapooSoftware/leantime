@@ -71,6 +71,15 @@
                         </select>
                     </div>
                 </div>
+				<div class="form-group">
+
+					<div class="span12">
+						<label for="done" class="span4 control-label"><?php echo $this->__('label.todo_done'); ?></label>
+						<input  class=" " style="margin-left:20px;" type="checkbox" id="done" name="done"
+								value="1" <?php if ($ticket->done==1){ ?>checked="checked"<?php }?>/>
+
+					</div>
+				</div>
                 <div class="form-group">
                     <label class="span4 control-label"><?php echo $this->__('label.sprint'); ?></label>
                     <div class="span6">

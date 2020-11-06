@@ -1022,6 +1022,7 @@ namespace leantime\core {
 		 * Resort Ticket IDs during update
 		 * Set done as done in new field done...
 		 * Set done as done in archiv Status in new field done
+		 * NEW Field done in tickets... ALTER TABLE `zp_tickets` ADD `done` INT NULL AFTER `lastEditDate`;
 		 * @return array|bool
 		 */
 		private function update_sql_20201()

@@ -5,6 +5,10 @@ namespace leantime\domain\repositories {
     use leantime\core;
     use pdo;
 
+	/**
+	 * Class tickets
+	 * @package leantime\domain\repositories
+	 */
     class tickets
     {
 
@@ -122,6 +126,9 @@ namespace leantime\domain\repositories {
 
         }
 
+		/**
+		 * @return string
+		 */
 		public function getNewStateLabels()
 		{
 			$new ="";
@@ -133,6 +140,9 @@ namespace leantime\domain\repositories {
 
 		}
 
+		/**
+		 * @return array|mixed
+		 */
         public function getStateLabels()
         {
             //Todo: Remove!
@@ -225,6 +235,11 @@ namespace leantime\domain\repositories {
             return $values;
         }
 
+		/**
+		 * @param $id
+		 * @param $limit
+		 * @return array
+		 */
         public function getUsersTickets($id,$limit)
         {
 
@@ -273,6 +288,9 @@ namespace leantime\domain\repositories {
             return $values;
         }
 
+		/**
+		 * @return array
+		 */
         public function getAvailableUsersForTicket()
         {
 
@@ -332,6 +350,7 @@ namespace leantime\domain\repositories {
 							zp_tickets.editorId,
 							zp_tickets.dependingTicketId,
 							zp_tickets.planHours,
+							zp_tickets.done,
 							zp_tickets.hourRemaining,
 							(SELECT ROUND(SUM(hours), 2) FROM zp_timesheets WHERE zp_tickets.id = zp_timesheets.ticketId) AS bookedHours,
 							zp_projects.name AS projectName,
@@ -471,6 +490,10 @@ namespace leantime\domain\repositories {
 
         }
 
+		/**
+		 * @param $projectId
+		 * @return array
+		 */
         public function getAllByProjectId($projectId)
         {
 
@@ -553,6 +576,7 @@ namespace leantime\domain\repositories {
 						zp_tickets.planHours,
 						zp_tickets.tags,
 						zp_tickets.url,
+						zp_tickets.done,
 						zp_tickets.editFrom,
 						zp_tickets.editTo,
 						zp_tickets.dependingTicketId,					
@@ -585,6 +609,10 @@ namespace leantime\domain\repositories {
 
         }
 
+		/**
+		 * @param $id
+		 * @return array
+		 */
         public function getAllSubtasks($id)
         {
 
@@ -609,6 +637,7 @@ namespace leantime\domain\repositories {
 						zp_tickets.planHours,
 						zp_tickets.tags,
 						zp_tickets.url,
+						zp_tickets.done,
 						zp_tickets.editFrom,
 						zp_tickets.editTo,
 						zp_tickets.dependingTicketId,					
@@ -639,6 +668,12 @@ namespace leantime\domain\repositories {
 
         }
 
+		/**
+		 * @param $projectId
+		 * @param false $includeArchived
+		 * @param string $sortBy
+		 * @return array
+		 */
         public function getAllMilestones($projectId, $includeArchived =false, $sortBy="headline")
         {
 
@@ -655,6 +690,7 @@ namespace leantime\domain\repositories {
 						zp_tickets.priority,
 						zp_tickets.status,
 						zp_tickets.sprint,
+						zp_tickets.done,
 						zp_tickets.storypoints,
 						zp_tickets.hourRemaining,
 						zp_tickets.acceptanceCriteria,
@@ -688,7 +724,7 @@ namespace leantime\domain\repositories {
                             THEN 
                               ROUND(
                                 (
-                                  SUM(CASE WHEN progressSub.status < 1 THEN IF(progressSub.storypoints = 0, 3, progressSub.storypoints) ELSE 0 END) / 
+                                  SUM(CASE WHEN progressSub.done = 1 THEN IF(progressSub.storypoints = 0, 3, progressSub.storypoints) ELSE 0 END) / 
                                   SUM(IF(progressSub.storypoints = 0, 3, progressSub.storypoints))
                                 ) *100) 
                             ELSE 
@@ -800,6 +836,10 @@ namespace leantime\domain\repositories {
 
         }
 
+		/**
+		 * @param $projectId
+		 * @return mixed
+		 */
         public function getFirstTicket($projectId)
         {
 
@@ -848,6 +888,10 @@ namespace leantime\domain\repositories {
 
         }
 
+		/**
+		 * @param $projectId
+		 * @return mixed
+		 */
         public function getNumberOfAllTickets($projectId)
         {
 
@@ -873,6 +917,11 @@ namespace leantime\domain\repositories {
 
         }
 
+		/**
+		 * Get closed Tickets - all tickets which are done...
+		 * @param $projectId
+		 * @return mixed
+		 */
         public function getNumberOfClosedTickets($projectId)
         {
 
@@ -882,7 +931,7 @@ namespace leantime\domain\repositories {
 						zp_tickets
 					WHERE 
 						zp_tickets.type <> 'milestone' AND zp_tickets.type <> 'subtask' AND zp_tickets.projectId = :projectId
-						AND zp_tickets.status < 1
+						AND zp_tickets.done = 1
                     ORDER BY
 					    zp_tickets.date ASC
 					LIMIT 1";
@@ -899,6 +948,11 @@ namespace leantime\domain\repositories {
 
         }
 
+		/**
+		 * @param $projectId
+		 * @param $averageStorySize
+		 * @return mixed
+		 */
         public function getEffortOfClosedTickets($projectId, $averageStorySize)
         {
 
@@ -953,6 +1007,10 @@ namespace leantime\domain\repositories {
 
         }
 
+		/**
+		 * @param $projectId
+		 * @return mixed
+		 */
         public function getAverageTodoSize($projectId)
         {
             $query = "SELECT
@@ -1127,7 +1185,8 @@ namespace leantime\domain\repositories {
 				editFrom = :editFrom,
 				editTo = :editTo,
 				acceptanceCriteria = :acceptanceCriteria,
-				dependingTicketId = :dependingTicketId
+				dependingTicketId = :dependingTicketId,
+				done = :done
 			WHERE id = :id LIMIT 1";
 
             $stmn = $this->db->database->prepare($query);
@@ -1148,7 +1207,8 @@ namespace leantime\domain\repositories {
             $stmn->bindValue(':editFrom', $values['editFrom'], PDO::PARAM_STR);
             $stmn->bindValue(':editTo', $values['editTo'], PDO::PARAM_STR);
             $stmn->bindValue(':id', $id, PDO::PARAM_STR);
-            $stmn->bindValue(':dependingTicketId', $values['dependingTicketId'], PDO::PARAM_STR);
+			$stmn->bindValue(':dependingTicketId', $values['dependingTicketId'], PDO::PARAM_STR);
+			$stmn->bindValue(':done', $values['done'], PDO::PARAM_STR);
 
 
             $result = $stmn->execute();

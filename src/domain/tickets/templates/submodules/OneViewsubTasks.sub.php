@@ -14,10 +14,11 @@
         <tr>
             <th width="15%" class="title-light"><?php echo $this->__('label.headline'); ?></th>
             <th  width="25%"><?php echo $this->__('label.description'); ?></th>
-            <th width="15%"><?php echo $this->__('label.todo_status'); ?></th>
+			<th width="14%"><?php echo $this->__('label.todo_status'); ?></th>
+			<th width="5%"><?php echo $this->__('label.todo_done'); ?></th>
             <th width="10%"><?php echo $this->__('label.planned_hours'); ?></th>
             <th width="10%"><?php echo $this->__('label.actual_hours_remaining'); ?></th>
-            <th width="12%"><?php echo $this->__('label.actions'); ?></th>
+            <th width="10%"><?php echo $this->__('label.actions'); ?></th>
         </tr>
     </thead>
     <tbody>
@@ -29,7 +30,7 @@
         $sumPlanHours = $sumPlanHours + $subticket['planHours'];
         $sumEstHours = $sumEstHours + $subticket['hourRemaining'];
         ?>
-        <tr>
+        <tr class="<?php if ($subticket['done']==1){ ?>subtaskchecked<?php }?>">
 
                 <td><input type="text" value="<?php $this->e($subticket['headline']); ?>" name="<?php echo $subticket['id']; ?>[subtaskheadline]"/></td>
                 <td><textarea  name="<?php echo $subticket['id']; ?>[subtaskdescription]" style="width:80%"><?php $this->e($subticket['description']) ?></textarea></td>
@@ -43,6 +44,7 @@
                         <?php } ?>
                     </select>
                 </td>
+			<td><input  class="right doneLabelcheckbox"  type="checkbox" id="done" name="<?php echo $subticket['id']; ?>[subtaskdone]" value="1" <?php if ($subticket['done']==1){ ?>checked="checked"<?php }?>/></td>
             <td><input type="text" value="<?php echo $this->e($subticket['planHours']); ?>" name="<?php echo $subticket['id']; ?>[subtaskplanHours]" class="small-input"/></td>
             <td><input type="text" value="<?php echo $this->e($subticket['hourRemaining']); ?>" name="<?php echo $subticket['id']; ?>[subtaskhourRemaining]" class="small-input"/></td>
                 <td><!--<input type="hidden" value="<?php echo $subticket['id']; ?>" name="subtaskId" />
@@ -61,7 +63,7 @@
             <td colspan="6"><?php echo $this->__('text.no_subtasks'); ?></td>
         </tr>
     <?php endif; ?>
-    <tr><td colspan="6" style="background:#ccc;"><strong><?php echo $this->__('text.create_new_subtask'); ?></strong></td></tr>
+    <tr><td colspan="7" style="background:#ccc;"><strong><?php echo $this->__('text.create_new_subtask'); ?></strong></td></tr>
     <tr>
 
         <td><input type="text" value="" name="new[subtaskheadline]"/></td>
@@ -74,6 +76,7 @@
                 <?php } ?>
             </select>
         </td>
+		<td></td>
         <td><input type="text" value="" name="new[subtaskplanHours]" style="width:100px;"/></td>
         <td><input type="text" value="" name="new[subtaskhourRemaining]" style="width:100px;"/></td>
         <td><input type="hidden" value="new" name="new[subtaskId]" />
@@ -85,7 +88,7 @@
     </tbody>
     <tfoot>
         <tr>
-            <td colspan="3"><strong><?php echo $this->__('label.total_hours') ?></strong></td>
+            <td colspan="4"><strong><?php echo $this->__('label.total_hours') ?></strong></td>
             <td><strong><?php echo $sumPlanHours; ?></strong></td>
             <td><strong><?php echo $sumEstHours; ?></strong></td>
             <td></td>
