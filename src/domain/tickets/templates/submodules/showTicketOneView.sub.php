@@ -49,8 +49,7 @@
 							<?php echo $this->displayLink('tickets.delTicket', '<i class="fa fa-trash"></i> '.$this->__('links.delete_todo'), array('id' => $ticket->id), array('class' => 'delete')) ?>
 						</div>
 					<?php endif; ?>
-					<input type="submit" name="saveTicket" value="<?php echo $this->__('buttons.save'); ?>xx"/>
-						<button name="saveTicket" onclick="document.getElementById('baseForm').submit();" value=""/><?php echo $this->__('buttons.save'); ?></button>
+					<input type="submit" name="saveTicket" value="<?php echo $this->__('buttons.save'); ?>"/>
 					<input type="submit" name="saveAndCloseTicket" value="<?php echo $this->__('buttons.save_and_close'); ?>"/>
 					</div>
 

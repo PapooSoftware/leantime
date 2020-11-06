@@ -1017,6 +1017,13 @@ namespace leantime\core {
 
 		}
 
+		/**
+		 * TODO
+		 * Resort Ticket IDs during update
+		 * Set done as done in new field done...
+		 * Set done as done in archiv Status in new field done
+		 * @return array|bool
+		 */
 		private function update_sql_20201()
 		{
 			$errors = array();
